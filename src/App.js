@@ -1,23 +1,19 @@
 
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const title = "Welcome to the new blog";
-  const likes = 50;
-  const link = "http://www.yahoo.com";
+  
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{title}</h1>
-        <p>Liked { likes } times</p>
-        <p>{20}</p>
-        <p>{"Hello Nasim"}</p>
-        <p>{[2, 6, 9, 8, 7, 4]}</p>
-        <p>{Math.random() * 10}</p>
-        <a href={link}>yahoo site</a>
+        <Home />
       </div>
     </div>
-  );
+   
+    );
 }
 
 export default App;
